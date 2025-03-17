@@ -1,0 +1,202 @@
+{
+  "name": "Ecosistema FCE",
+  "short_name": "Ecosistema FCE",
+  "start_url": "/login/index.php",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0D62AD",
+  "lang": "es",
+  "dir": "ltr",
+  "orientation": "portrait",
+  "description": "Entorno tecnológico para los aspectos virtualizados de nuestra actividad académica.",
+  "categories": ["education", "productivity"],
+  "icons": [
+    {
+      "src": "/theme/academi/pix/icons/v.eco-maskable-48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/theme/academi/pix/icons/v.eco-maskable-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/theme/academi/pix/icons/v.eco-maskable-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/theme/academi/pix/icons/v.eco-maskable-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/theme/academi/pix/icons/v.eco-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/theme/academi/pix/icons/v.eco-maskable-384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/theme/academi/pix/icons/v.eco-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/theme/academi/pix/icons/v.eco-48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/theme/academi/pix/icons/v.eco-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/theme/academi/pix/icons/v.eco-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/theme/academi/pix/icons/v.eco-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/theme/academi/pix/icons/v.eco-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/theme/academi/pix/icons/v.eco-384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/theme/academi/pix/icons/v.eco-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+        "src": "/theme/academi/pix/screenshots/screenshot-desktop-login.png",
+        "sizes": "3420x2224",
+        "type": "image/png",
+        "form_factor": "wide"
+    },
+    {
+        "src": "/theme/academi/pix/screenshots/screenshot-desktop-dashboard.png",
+        "sizes": "3420x2224",
+        "type": "image/png",
+        "form_factor": "wide"
+    },
+    {
+        "src": "/theme/academi/pix/screenshots/screenshot-desktop-courses.png",
+        "sizes": "3420x2224",
+        "type": "image/png",
+        "form_factor": "wide"
+    },
+    {
+        "src": "/theme/academi/pix/screenshots//screenshot-desktop-profile.png",
+        "sizes": "3420x2224",
+        "type": "image/png",
+        "form_factor": "wide"
+    },
+    {
+        "src": "/theme/academi/pix/screenshots/screenshot-mobile-login.png",
+        "sizes": "1125x2436",
+        "type": "image/png"
+    },
+    {
+        "src": "/theme/academi/pix/screenshots/screenshot-mobile-dashboard.png",
+        "sizes": "1125x2436",
+        "type": "image/png"
+    },
+    {
+        "src": "/theme/academi/pix/screenshots/screenshot-mobile-courses.png",
+        "sizes": "1125x2436",
+        "type": "image/png"
+    },
+    {
+        "src": "/theme/academi/pix/screenshots/screenshot-mobile-profile.png",
+        "sizes": "1125x2436",
+        "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Mi Tablero",
+      "short_name": "Tablero",
+      "description": "Ingresa a tu tablero",
+      "url": "https://v.eco.unrc.edu.ar/my/",
+      "icons": [
+	{
+          "src": "/theme/academi/pix/shortcuts/dashboard-icon.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        },
+        {
+          "src": "/theme/academi/pix/shortcuts/dashboard-icon.svg",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Mis Cursos",
+      "short_name": "Cursos",
+      "description": "Mira todos tus cursos",
+      "url": "https://v.eco.unrc.edu.ar/my/courses.php",
+      "icons": [
+        {
+          "src": "/theme/academi/pix/shortcuts/course-icon.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        },
+        {
+          "src": "/theme/academi/pix/shortcuts/course-icon.svg",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Mi Perfil",
+      "short_name": "Perfil",
+      "description": "Ingresa a tu perfil",
+      "url": "https://v.eco.unrc.edu.ar/user/profile.php",
+      "icons": [
+        {
+          "src": "/theme/academi/pix/shortcuts/profile-icon.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        },
+	{
+          "src": "/theme/academi/pix/shortcuts/profile-icon.svg",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ]
+}
