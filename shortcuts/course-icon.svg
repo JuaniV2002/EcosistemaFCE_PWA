@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="bi bi-person-video3" viewBox="0 0 96 96" id="Person-Video3--Streamline-Bootstrap" height="96" width="96">
+    <desc>Person Video3 Streamline Icon: https://streamlinehq.com</desc>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            path { fill: white; }
+        }
+        @media (prefers-color-scheme: light) {
+            path { fill: black; }
+        }
+    </style>
+    <path d="M84 57a12 12 0 1 1 -24 0 12 12 0 0 1 24 0m-36 34.2c0 4.8 4.8 4.8 4.8 4.8h38.4s4.8 0 4.8-4.8-4.8-19.2-24-19.2-24 14.4-24 19.2" stroke-width="6"></path>
+    <path d="M12 12a12 12 0 0 0 -12 12v48a12 12 0 0 0 12 12h31.458c0.732-1.956 1.77-4.008 3.156-6H12a6 6 0 0 1 -6-6V24a6 6 0 0 1 6-6h72a6 6 0 0 1 6 6v46.86c2.118 1.38 3.936 2.976 5.46 4.698Q96 73.872 96 72V24a12 12 0 0 0 -12-12z" stroke-width="6"></path>
+</svg>
