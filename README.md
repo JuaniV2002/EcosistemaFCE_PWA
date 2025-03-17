@@ -1,5 +1,51 @@
 # Ecosistema FCE: Moodle PWA
 
+This repository contains the implementation of a **Progressive Web App (PWA)** for the Moodle instance of **v.eco.unrc.edu.ar**. The goal is to improve the Moodle user experience by enabling app installation, a custom home screen, and better support for mobile devices.
+
+## Features
+
+- UI/UX optimized for PWA on both desktop and mobile devices.
+- Shortcuts: long-press the app icon (Android and Windows) to quickly access basic PWA features.
+- Standard and **maskable** icons for Android and iOS.
+- iOS splash screens via `<meta>` tags (for apps added from Safari).
+- Screenshots of the app on various devices (iOS and Android) to provide a more complete installation experience.
+
+## Live site
+
+You can test the PWA on the Moodle site here:
+
+[https://v.eco.unrc.edu.ar/](https://v.eco.unrc.edu.ar/)
+
+## Screenshots
+
+| Mobile | Desktop |
+|--------|---------|
+| ![Mobile Screenshot](screenshots/screenshot-mobile-login.png) | ![Desktop Screenshot](screenshots/screenshot-desktop-login.png) |
+| ![Mobile Screenshot](screenshots/screenshot-mobile-dashboard.png) | ![Desktop Screenshot](screenshots/screenshot-desktop-dashboard.png) |
+| ![Mobile Screenshot](screenshots/screenshot-mobile-profile.png) | ![Desktop Screenshot](screenshots/screenshot-desktop-profile.png) |
+| ![Mobile Screenshot](screenshots/screenshot-mobile-courses.png) | ![Desktop Screenshot](screenshots/screenshot-desktop-courses.png) |
+
+## Resources
+
+- PWA Guide: [https://web.dev/progressive-web-apps/](https://web.dev/progressive-web-apps/)
+- Official Moodle Documentation: [https://docs.moodle.org/](https://docs.moodle.org/)
+
+## Notes
+
+The PWA has been tested on the following operating systems:
+  - macOS: Safari, Chromium-based browsers, Firefox.
+  - Windows: Chromium-based browsers, Firefox.
+  - iOS: Safari, Chromium-based browsers, Firefox.
+  - Android: Chromium-based browsers, Firefox.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+# Ecosistema FCE: Moodle PWA
+
 Este repositorio contiene la implementación de una **Progressive Web App (PWA)** para la instancia de Moodle de **v.eco.unrc.edu.ar**. El objetivo es mejorar la experiencia de usuario en Moodle permitiendo la instalación como aplicación, pantalla de inicio personalizada y mejor soporte para dispositivos móviles.
 
 ## Características
