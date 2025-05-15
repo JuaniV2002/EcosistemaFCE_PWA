@@ -58,42 +58,71 @@ href="https://v.eco.unrc.edu.ar/theme/academi/pix/splash_screens/10.2__iPad_port
 href="https://v.eco.unrc.edu.ar/theme/academi/pix/splash_screens/10.5__iPad_Air_landscape.pngsplash_screens/13__iPad_Pro_M4_portrait.png">
 <link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="https://v.eco.unrc.edu.ar/theme/academi/pix/splash_screens/10.5__iPad_Air_landscape.png">
 <link rel="apple-touch-startup-image" media="screen and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/10.2__iPad_landscape.png">
-<link rel="apple-touch-icon" sizes="512x512" href="https://v.eco.unrc.edu.ar/theme/academi/pix/icons/icon.png">
+<link rel="apple-touch-icon" sizes="512x512" href="https://v.eco.unrc.edu.ar/theme/academi/pix/icons/icon-blue-512.png">
 
 <script>
   let deferredPrompt;
 
-  // Listen for the beforeinstallprompt event (for Android)
+  // Función para verificar si la app ya está instalada
+  function isAppInstalled() {
+    return window.navigator.standalone === true || window.matchMedia('(display-mode: standalone)').matches;
+  }
+
+  // Función para detectar dispositivos iOS (incluye iPadOS)
+  function isIOS() {
+    return (
+      /iPhone|iPad|iPod/.test(navigator.userAgent) ||
+      (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
+    );
+  }
+
+  // Función para detectar macOS (excluye iPadOS)
+  function isMac() {
+    return (
+      navigator.platform.indexOf('Mac') >= 0 &&
+      !(navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
+    );
+  }
+
+  // Escuchar el evento beforeinstallprompt (para Android y navegadores compatibles)
   window.addEventListener('beforeinstallprompt', (e) => {
     e.preventDefault();
     deferredPrompt = e;
   });
 
-  // Wait until the DOM is fully loaded
+  // Esperar a que el DOM esté completamente cargado
   document.addEventListener('DOMContentLoaded', () => {
-    // Select the slider button by its unique href attribute
+    // Seleccionar el botón del slider por su atributo href único
     const installBtn = document.querySelector('a[href="#installPwa"]');
     if (installBtn) {
       installBtn.addEventListener('click', async (event) => {
-        event.preventDefault(); // Prevent the default anchor behavior
+        event.preventDefault();
+
+        // Verificar si la app ya está instalada en cualquier plataforma
+        if (isAppInstalled()) {
+          alert('La aplicación ya está instalada.');
+          return;
+        }
 
         if (deferredPrompt) {
-          // Trigger the native install prompt on Android
+          // Mostrar el prompt nativo para instalar la app (Android, Chrome, Edge, etc.)
           deferredPrompt.prompt();
-
-          // Wait for the user to respond to the prompt
           const { outcome } = await deferredPrompt.userChoice;
-          console.log('User response:', outcome);
-
-          // Reset the deferredPrompt variable
+          console.log('Respuesta del usuario:', outcome);
           deferredPrompt = null;
         } else {
-          // Fallback for iOS or other browsers that don't support beforeinstallprompt
-          alert('En iOS, presioná el ícono de compartir y elegí "Añadir a Inicio".');
+          // Fallback para navegadores sin beforeinstallprompt
+          if (isIOS()) {
+            alert('Presioná el ícono de compartir y elegí "Añadir a Inicio".');
+          } else if (isMac()) {
+            alert('Presioná el ícono de compartir y "Añadir al Dock".');
+          } else {
+            alert('La instalación de esta aplicación no es compatible con este navegador.');
+          }
         }
       });
     } else {
-      console.error('Install button not found. Make sure your slider button URL is set to "#installPwa".');
+      console.error('No se encontró el botón de instalación. Asegúrate de que la URL del botón sea "#installPwa".');
     }
   });
 </script>
